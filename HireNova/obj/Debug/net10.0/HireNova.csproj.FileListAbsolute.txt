@@ -1,0 +1,282 @@
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\HireNova.csproj.AssemblyReference.cache
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\rpswa.dswa.cache.json
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\HireNova.GeneratedMSBuildEditorConfig.editorconfig
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\HireNova.AssemblyInfoInputs.cache
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\HireNova.AssemblyInfo.cs
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\HireNova.csproj.CoreCompileInputs.cache
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\HireNova.MvcApplicationPartsAssemblyInfo.cache
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\HireNova.RazorAssemblyInfo.cache
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\HireNova.RazorAssemblyInfo.cs
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\appsettings.Development.json
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\appsettings.json
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\HireNova.staticwebassets.runtime.json
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\HireNova.staticwebassets.endpoints.json
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\HireNova.exe
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\HireNova.deps.json
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\HireNova.runtimeconfig.json
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\HireNova.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\HireNova.pdb
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\BCrypt-Net-Next.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\Dapper.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\Microsoft.Bcl.Cryptography.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\Microsoft.Data.SqlClient.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\Microsoft.Data.SqlClient.Extensions.Abstractions.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\Microsoft.Data.SqlClient.Internal.Logging.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\Microsoft.SqlServer.Server.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\System.Configuration.ConfigurationManager.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\System.Security.Cryptography.ProtectedData.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\cs\Microsoft.Data.SqlClient.resources.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\de\Microsoft.Data.SqlClient.resources.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\es\Microsoft.Data.SqlClient.resources.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\fr\Microsoft.Data.SqlClient.resources.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\it\Microsoft.Data.SqlClient.resources.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\ja\Microsoft.Data.SqlClient.resources.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\ko\Microsoft.Data.SqlClient.resources.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\pl\Microsoft.Data.SqlClient.resources.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\ru\Microsoft.Data.SqlClient.resources.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\tr\Microsoft.Data.SqlClient.resources.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\runtimes\unix\lib\net9.0\Microsoft.Data.SqlClient.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\runtimes\win\lib\net9.0\Microsoft.Data.SqlClient.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\HireNova.Data_Connection.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\HireNova.Data_Model.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\HireNova.Data_Services.dll
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\HireNova.Data_Connection.pdb
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\HireNova.Data_Model.pdb
+C:\MYHireNova\HireNova\HireNova\bin\Debug\net10.0\HireNova.Data_Services.pdb
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\rjimswa.dswa.cache.json
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\scopedcss\bundle\HireNova.styles.css
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\scopedcss\projectbundle\HireNova.bundle.scp.css
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\gok436mtm1-{0}-b9sayid5wm-b9sayid5wm.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\g3ammbz2ne-{0}-61n19gt1b8-61n19gt1b8.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\jvt952juy9-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\nloxc2k1hb-{0}-bqjiyaj88i-bqjiyaj88i.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\prypnlcuy1-{0}-c2jlpeoesf-c2jlpeoesf.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\p49t8ob0xq-{0}-erw9l3u2r3-erw9l3u2r3.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\fk4f0hytax-{0}-aexeepp0ev-aexeepp0ev.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\aci6uirlim-{0}-d7shbmvgxk-d7shbmvgxk.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\tnbywc0c3p-{0}-ausgxo2sd3-ausgxo2sd3.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\weja1aymm3-{0}-k8d9w2qqmf-k8d9w2qqmf.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\joaee7zq20-{0}-cosvhxvwiu-cosvhxvwiu.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\xfk8icvgpa-{0}-ub07r2b239-ub07r2b239.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\dbu7fg5qvb-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\5fg7b5zi3z-{0}-b7pk76d08c-b7pk76d08c.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\n3u3899e19-{0}-fsbi9cje9m-fsbi9cje9m.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\591cksuhmp-{0}-rzd6atqjts-rzd6atqjts.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\2ccqfdehgb-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\hfydqrztuk-{0}-dxx9fxp4il-dxx9fxp4il.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\1yhziwkfxs-{0}-jd9uben2k1-jd9uben2k1.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\i3ostoqksz-{0}-khv3u5hwcm-khv3u5hwcm.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\3jlyq3xmt2-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\txbzgayzw4-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\mm7uadersv-{0}-c2oey78nd0-c2oey78nd0.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\8as7w7owbl-{0}-tdbxkamptv-tdbxkamptv.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\i4o7stxrfz-{0}-j5mq2jizvt-j5mq2jizvt.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\n13ijsvnpo-{0}-06098lyss8-06098lyss8.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\j1htlg9kg5-{0}-nvvlpmu67g-nvvlpmu67g.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\j9yh61gq0w-{0}-s35ty4nyc5-s35ty4nyc5.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\orlavvfk7d-{0}-pj5nd1wqec-pj5nd1wqec.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\1fvm4u58ng-{0}-46ein0sx1k-46ein0sx1k.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\8jtxbf4jja-{0}-v0zj4ognzu-v0zj4ognzu.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\60y916n8cy-{0}-37tfw0ft22-37tfw0ft22.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\8mk8xkv210-{0}-hrwsygsryq-hrwsygsryq.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\suapsicbxu-{0}-pk9g2wxc8p-pk9g2wxc8p.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\s1l9n7c038-{0}-ft3s53vfgj-ft3s53vfgj.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\ov1w63tlkd-{0}-6cfz1n2cew-6cfz1n2cew.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\lc5o5ekkbo-{0}-6pdc2jztkx-6pdc2jztkx.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\x934jvta2k-{0}-493y06b0oq-493y06b0oq.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\qsd80scggn-{0}-iovd86k7lj-iovd86k7lj.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\pxcckft5ze-{0}-vr1egmr9el-vr1egmr9el.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\ywyxbtwqbk-{0}-kbrnm935zg-kbrnm935zg.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\mlf4kmyr7y-{0}-jj8uyg4cgr-jj8uyg4cgr.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\dx2mz8ryoi-{0}-y7v9cxd14o-y7v9cxd14o.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\ycj62kb495-{0}-notf2xhcfb-notf2xhcfb.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\4hba2694ec-{0}-h1s4sie4z3-h1s4sie4z3.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\17boek045k-{0}-63fj8s7r0e-63fj8s7r0e.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\og5pwde23g-{0}-0j3bgjxly4-0j3bgjxly4.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\vnijsh9bue-{0}-47otxtyo56-47otxtyo56.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\6tg4r0zpp1-{0}-4v8eqarkd7-4v8eqarkd7.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\a2nnt3a5wq-{0}-356vix0kms-356vix0kms.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\mhwqg5c6q1-{0}-83jwlth58m-83jwlth58m.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\sqk1oefkdh-{0}-mrlpezrjn3-mrlpezrjn3.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\t3nf6oxu0u-{0}-lzl9nlhx6b-lzl9nlhx6b.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\r28p8v6nrx-{0}-ag7o75518u-ag7o75518u.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\vrtiu1815p-{0}-x0q3zqp4vz-x0q3zqp4vz.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\1ij1rkqbwp-{0}-0i3buxo5is-0i3buxo5is.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\1rtc2448nx-{0}-o1o13a6vjx-o1o13a6vjx.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\3i1b7lo4gp-{0}-ttgo8qnofa-ttgo8qnofa.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\cgzi9uyjni-{0}-2z0ns9nrw6-2z0ns9nrw6.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\0wc9m651h1-{0}-muycvpuwrr-muycvpuwrr.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\7o478rh3vt-{0}-87fc7y1x7t-87fc7y1x7t.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\uvq4kgj6mw-{0}-mlv21k5csn-mlv21k5csn.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\axaextgdp2-{0}-gg69gdsuuw-gg69gdsuuw.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\p8a7bv2xzm-{0}-a61ox3arlb-a61ox3arlb.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\xx9jk8yfnu-{0}-a61ox3arlb-a61ox3arlb.gz
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\staticwebassets.build.json
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\staticwebassets.build.json.cache
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\staticwebassets.development.json
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\swae.build.ex.cache
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\HireNova.csproj.Up2Date
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\HireNova.dll
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\refint\HireNova.dll
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\HireNova.pdb
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\HireNova.genruntimeconfig.cache
+C:\MYHireNova\HireNova\HireNova\obj\Debug\net10.0\ref\HireNova.dll
+e:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\HireNova.csproj.AssemblyReference.cache
+e:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\rpswa.dswa.cache.json
+e:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\HireNova.GeneratedMSBuildEditorConfig.editorconfig
+e:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\HireNova.AssemblyInfoInputs.cache
+e:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\HireNova.AssemblyInfo.cs
+e:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\HireNova.csproj.CoreCompileInputs.cache
+e:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\HireNova.MvcApplicationPartsAssemblyInfo.cache
+e:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\HireNova.RazorAssemblyInfo.cache
+e:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\HireNova.RazorAssemblyInfo.cs
+e:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\HireNova.dll
+e:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\refint\HireNova.dll
+e:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\HireNova.pdb
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\appsettings.Development.json
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\appsettings.json
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\HireNova.staticwebassets.runtime.json
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\HireNova.staticwebassets.endpoints.json
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\HireNova.exe
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\HireNova.deps.json
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\HireNova.runtimeconfig.json
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\HireNova.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\HireNova.pdb
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\BCrypt-Net-Next.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\Dapper.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\Microsoft.Bcl.Cryptography.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\Microsoft.Data.SqlClient.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\Microsoft.Data.SqlClient.Extensions.Abstractions.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\Microsoft.Data.SqlClient.Internal.Logging.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\Microsoft.IdentityModel.Abstractions.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\Microsoft.IdentityModel.Logging.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\Microsoft.IdentityModel.Tokens.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\Microsoft.SqlServer.Server.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\System.Configuration.ConfigurationManager.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\System.IdentityModel.Tokens.Jwt.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\System.Security.Cryptography.ProtectedData.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\cs\Microsoft.Data.SqlClient.resources.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\de\Microsoft.Data.SqlClient.resources.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\es\Microsoft.Data.SqlClient.resources.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\fr\Microsoft.Data.SqlClient.resources.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\it\Microsoft.Data.SqlClient.resources.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\ja\Microsoft.Data.SqlClient.resources.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\ko\Microsoft.Data.SqlClient.resources.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\pl\Microsoft.Data.SqlClient.resources.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\pt-BR\Microsoft.Data.SqlClient.resources.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\ru\Microsoft.Data.SqlClient.resources.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\tr\Microsoft.Data.SqlClient.resources.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\runtimes\unix\lib\net9.0\Microsoft.Data.SqlClient.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\runtimes\win\lib\net9.0\Microsoft.Data.SqlClient.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\HireNova.Data_Connection.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\HireNova.Data_Model.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\HireNova.Data_Services.dll
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\HireNova.Data_Connection.pdb
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\HireNova.Data_Model.pdb
+E:\New folder\HireNova\HireNova\HireNova\bin\Debug\net10.0\HireNova.Data_Services.pdb
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\rjimswa.dswa.cache.json
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\rjsmrazor.dswa.cache.json
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\rjsmcshtml.dswa.cache.json
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\scopedcss\bundle\HireNova.styles.css
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\scopedcss\projectbundle\HireNova.bundle.scp.css
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\gok436mtm1-{0}-b9sayid5wm-b9sayid5wm.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\g3ammbz2ne-{0}-61n19gt1b8-61n19gt1b8.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\jvt952juy9-{0}-xtxxf3hu2r-xtxxf3hu2r.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\nloxc2k1hb-{0}-bqjiyaj88i-bqjiyaj88i.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\prypnlcuy1-{0}-c2jlpeoesf-c2jlpeoesf.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\p49t8ob0xq-{0}-erw9l3u2r3-erw9l3u2r3.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\fk4f0hytax-{0}-aexeepp0ev-aexeepp0ev.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\aci6uirlim-{0}-d7shbmvgxk-d7shbmvgxk.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\tnbywc0c3p-{0}-ausgxo2sd3-ausgxo2sd3.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\weja1aymm3-{0}-k8d9w2qqmf-k8d9w2qqmf.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\joaee7zq20-{0}-cosvhxvwiu-cosvhxvwiu.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\xfk8icvgpa-{0}-ub07r2b239-ub07r2b239.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\dbu7fg5qvb-{0}-fvhpjtyr6v-fvhpjtyr6v.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\5fg7b5zi3z-{0}-b7pk76d08c-b7pk76d08c.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\n3u3899e19-{0}-fsbi9cje9m-fsbi9cje9m.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\591cksuhmp-{0}-rzd6atqjts-rzd6atqjts.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\2ccqfdehgb-{0}-ee0r1s7dh0-ee0r1s7dh0.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\hfydqrztuk-{0}-dxx9fxp4il-dxx9fxp4il.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\1yhziwkfxs-{0}-jd9uben2k1-jd9uben2k1.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\i3ostoqksz-{0}-khv3u5hwcm-khv3u5hwcm.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\3jlyq3xmt2-{0}-r4e9w2rdcm-r4e9w2rdcm.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\txbzgayzw4-{0}-lcd1t2u6c8-lcd1t2u6c8.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\mm7uadersv-{0}-c2oey78nd0-c2oey78nd0.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\8as7w7owbl-{0}-tdbxkamptv-tdbxkamptv.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\i4o7stxrfz-{0}-j5mq2jizvt-j5mq2jizvt.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\n13ijsvnpo-{0}-06098lyss8-06098lyss8.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\j1htlg9kg5-{0}-nvvlpmu67g-nvvlpmu67g.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\j9yh61gq0w-{0}-s35ty4nyc5-s35ty4nyc5.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\orlavvfk7d-{0}-pj5nd1wqec-pj5nd1wqec.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\1fvm4u58ng-{0}-46ein0sx1k-46ein0sx1k.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\8jtxbf4jja-{0}-v0zj4ognzu-v0zj4ognzu.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\60y916n8cy-{0}-37tfw0ft22-37tfw0ft22.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\8mk8xkv210-{0}-hrwsygsryq-hrwsygsryq.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\suapsicbxu-{0}-pk9g2wxc8p-pk9g2wxc8p.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\s1l9n7c038-{0}-ft3s53vfgj-ft3s53vfgj.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\ov1w63tlkd-{0}-6cfz1n2cew-6cfz1n2cew.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\lc5o5ekkbo-{0}-6pdc2jztkx-6pdc2jztkx.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\x934jvta2k-{0}-493y06b0oq-493y06b0oq.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\qsd80scggn-{0}-iovd86k7lj-iovd86k7lj.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\pxcckft5ze-{0}-vr1egmr9el-vr1egmr9el.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\ywyxbtwqbk-{0}-kbrnm935zg-kbrnm935zg.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\mlf4kmyr7y-{0}-jj8uyg4cgr-jj8uyg4cgr.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\dx2mz8ryoi-{0}-y7v9cxd14o-y7v9cxd14o.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\ycj62kb495-{0}-notf2xhcfb-notf2xhcfb.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\4hba2694ec-{0}-h1s4sie4z3-h1s4sie4z3.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\17boek045k-{0}-63fj8s7r0e-63fj8s7r0e.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\og5pwde23g-{0}-0j3bgjxly4-0j3bgjxly4.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\vnijsh9bue-{0}-47otxtyo56-47otxtyo56.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\6tg4r0zpp1-{0}-4v8eqarkd7-4v8eqarkd7.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\a2nnt3a5wq-{0}-356vix0kms-356vix0kms.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\mhwqg5c6q1-{0}-83jwlth58m-83jwlth58m.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\sqk1oefkdh-{0}-mrlpezrjn3-mrlpezrjn3.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\t3nf6oxu0u-{0}-lzl9nlhx6b-lzl9nlhx6b.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\r28p8v6nrx-{0}-ag7o75518u-ag7o75518u.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\vrtiu1815p-{0}-x0q3zqp4vz-x0q3zqp4vz.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\1ij1rkqbwp-{0}-0i3buxo5is-0i3buxo5is.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\1rtc2448nx-{0}-o1o13a6vjx-o1o13a6vjx.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\3i1b7lo4gp-{0}-ttgo8qnofa-ttgo8qnofa.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\cgzi9uyjni-{0}-2z0ns9nrw6-2z0ns9nrw6.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\0wc9m651h1-{0}-muycvpuwrr-muycvpuwrr.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\7o478rh3vt-{0}-87fc7y1x7t-87fc7y1x7t.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\uvq4kgj6mw-{0}-mlv21k5csn-mlv21k5csn.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\axaextgdp2-{0}-gg69gdsuuw-gg69gdsuuw.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\p8a7bv2xzm-{0}-a61ox3arlb-a61ox3arlb.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\compressed\xx9jk8yfnu-{0}-a61ox3arlb-a61ox3arlb.gz
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\staticwebassets.build.json
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\staticwebassets.build.json.cache
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\staticwebassets.development.json
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\staticwebassets.build.endpoints.json
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\swae.build.ex.cache
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\HireNova.csproj.Up2Date
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\HireNova.genruntimeconfig.cache
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\ref\HireNova.dll
+E:\New folder\HireNova\HireNova\HireNova\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
