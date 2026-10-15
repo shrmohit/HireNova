@@ -1,0 +1,26 @@
+C:\MYHireNova\HireNova\HireNova.Data_Connection\bin\Debug\net10.0\HireNova.Data_Connection.deps.json
+C:\MYHireNova\HireNova\HireNova.Data_Connection\bin\Debug\net10.0\HireNova.Data_Connection.dll
+C:\MYHireNova\HireNova\HireNova.Data_Connection\bin\Debug\net10.0\HireNova.Data_Connection.pdb
+C:\MYHireNova\HireNova\HireNova.Data_Connection\obj\Debug\net10.0\HireNova.Data_Connection.csproj.AssemblyReference.cache
+C:\MYHireNova\HireNova\HireNova.Data_Connection\obj\Debug\net10.0\HireNova.Data_Connection.GeneratedMSBuildEditorConfig.editorconfig
+C:\MYHireNova\HireNova\HireNova.Data_Connection\obj\Debug\net10.0\HireNova.Data_Connection.AssemblyInfoInputs.cache
+C:\MYHireNova\HireNova\HireNova.Data_Connection\obj\Debug\net10.0\HireNova.Data_Connection.AssemblyInfo.cs
+C:\MYHireNova\HireNova\HireNova.Data_Connection\obj\Debug\net10.0\HireNova.Data_Connection.csproj.CoreCompileInputs.cache
+C:\MYHireNova\HireNova\HireNova.Data_Connection\obj\Debug\net10.0\HireNova.Data_Connection.dll
+C:\MYHireNova\HireNova\HireNova.Data_Connection\obj\Debug\net10.0\refint\HireNova.Data_Connection.dll
+C:\MYHireNova\HireNova\HireNova.Data_Connection\obj\Debug\net10.0\HireNova.Data_Connection.pdb
+C:\MYHireNova\HireNova\HireNova.Data_Connection\obj\Debug\net10.0\ref\HireNova.Data_Connection.dll
+C:\MYHireNova\HireNova\HireNova.Data_Connection\obj\Debug\net10.0\HireNova.0A3A79BB.Up2Date
+e:\New folder\HireNova\HireNova\HireNova.Data_Connection\bin\Debug\net10.0\HireNova.Data_Connection.deps.json
+e:\New folder\HireNova\HireNova\HireNova.Data_Connection\bin\Debug\net10.0\HireNova.Data_Connection.dll
+e:\New folder\HireNova\HireNova\HireNova.Data_Connection\bin\Debug\net10.0\HireNova.Data_Connection.pdb
+e:\New folder\HireNova\HireNova\HireNova.Data_Connection\obj\Debug\net10.0\HireNova.Data_Connection.csproj.AssemblyReference.cache
+e:\New folder\HireNova\HireNova\HireNova.Data_Connection\obj\Debug\net10.0\HireNova.Data_Connection.GeneratedMSBuildEditorConfig.editorconfig
+e:\New folder\HireNova\HireNova\HireNova.Data_Connection\obj\Debug\net10.0\HireNova.Data_Connection.AssemblyInfoInputs.cache
+e:\New folder\HireNova\HireNova\HireNova.Data_Connection\obj\Debug\net10.0\HireNova.Data_Connection.AssemblyInfo.cs
+e:\New folder\HireNova\HireNova\HireNova.Data_Connection\obj\Debug\net10.0\HireNova.Data_Connection.csproj.CoreCompileInputs.cache
+e:\New folder\HireNova\HireNova\HireNova.Data_Connection\obj\Debug\net10.0\HireNova.Data_Connection.dll
+e:\New folder\HireNova\HireNova\HireNova.Data_Connection\obj\Debug\net10.0\refint\HireNova.Data_Connection.dll
+e:\New folder\HireNova\HireNova\HireNova.Data_Connection\obj\Debug\net10.0\HireNova.Data_Connection.pdb
+e:\New folder\HireNova\HireNova\HireNova.Data_Connection\obj\Debug\net10.0\ref\HireNova.Data_Connection.dll
+E:\New folder\HireNova\HireNova\HireNova.Data_Connection\obj\Debug\net10.0\HireNova.0A3A79BB.Up2Date
