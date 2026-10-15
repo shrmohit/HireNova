@@ -1,0 +1,369 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>@ViewData["Title"] - HireNova ADMIN</title>
+
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet"
+          href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <link rel="stylesheet"
+          href="~/css/site.css"
+          asp-append-version="true" />
+
+    <!-- Hide scrollbar but keep scrolling enabled -->
+    <style>
+        .sidebar-menu {
+            overflow-y: auto;
+            overflow-x: hidden;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+
+        .sidebar-menu::-webkit-scrollbar {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+    </style>
+
+    @await RenderSectionAsync("Styles", required: false)
+</head>
+
+<body class="bg-light">
+
+    <div class="container-fluid p-0">
+        <div class="row g-0">
+
+            <!-- LEFT SIDEBAR -->
+            <aside class="col-auto position-fixed top-0 start-0 vh-100
+                          text-white d-flex flex-column
+                          border-end border-primary-subtle"
+                   style="width:260px; z-index:1040;
+                          background:linear-gradient(180deg,#0d5cff 0%,#003db3 100%);">
+
+                <!-- FIXED HIRENOVA BRAND -->
+                <a asp-controller="Admin"
+                   asp-action="Index"
+                   class="d-flex align-items-center gap-2
+                          text-white text-decoration-none p-3
+                          border-bottom border-light border-opacity-25
+                          flex-shrink-0">
+
+                    <span class="d-flex align-items-center
+                                 justify-content-center bg-white
+                                 text-primary rounded-3 fw-bold fs-4
+                                 flex-shrink-0"
+                          style="width:40px;height:40px;">
+                        H
+                    </span>
+
+                    <span class="fw-bold fs-5 text-nowrap">
+                        HireNova
+                    </span>
+
+                    <span class="badge bg-white text-primary">
+                        ADMIN
+                    </span>
+
+                </a>
+
+                <!-- SCROLLABLE MENU: SCROLLBAR HIDDEN -->
+                <div class="sidebar-menu flex-grow-1">
+
+                    <nav class="nav nav-pills flex-column p-3 gap-1">
+
+                        <span class="text-uppercase text-white-50
+                                     small fw-bold px-2 mt-2 mb-2">
+                            Main Menu
+                        </span>
+
+                        <a asp-controller="Admin"
+                           asp-action="Index"
+                           class="nav-link text-white rounded-3">
+                            <span class="me-2">▦</span>
+                            Dashboard
+                        </a>
+
+                        <!-- USER MANAGEMENT -->
+                        <span class="text-uppercase text-white-50
+                                     small fw-bold px-2 mt-4 mb-2">
+                            User Management
+                        </span>
+                        
+<a href="/Admin/Users"
+   class="nav-link text-white rounded-3">
+    <span class="me-2">♙</span>
+    Manage Users
+</a>
+
+<a href="/Admin/Candidates"
+   class="nav-link text-white rounded-3">
+    <span class="me-2">♧</span>
+    Candidates
+</a>
+            @*             <a asp-controller="Admin"
+                           asp-action="Users"
+                           class="nav-link text-white rounded-3">
+                            <span class="me-2">♙</span>
+                            Manage Users
+                        </a>
+
+                     
+<a asp-controller="Admin"
+   asp-action="Candidates"
+   class="nav-link text-white rounded-3">
+    <span class="me-2">♧</span>
+    Candidates
+</a> *@
+
+                        <a href="#"
+                           class="nav-link text-white rounded-3">
+                            <span class="me-2">♙</span>
+                            Recruiters
+                        </a>
+
+                        <a href="#"
+                           class="nav-link text-white rounded-3">
+                            <span class="me-2">♟</span>
+                            Administrators
+                        </a>
+
+                        <!-- COMPANY MANAGEMENT -->
+                        <span class="text-uppercase text-white-50
+                                     small fw-bold px-2 mt-4 mb-2">
+                            Company Management
+                        </span>
+
+                        <a class="nav-link text-white rounded-3"
+                           data-bs-toggle="collapse"
+                           href="#companyMenu"
+                           role="button"
+                           aria-expanded="false"
+                           aria-controls="companyMenu">
+
+                            <span class="me-2">▤</span>
+                            Companies
+                            <span class="ms-auto float-end">⌄</span>
+                        </a>
+
+                        <div class="collapse ps-3" id="companyMenu">
+
+                            <a href="#"
+                               class="nav-link text-white rounded-3 small">
+                                All Companies
+                            </a>
+
+                            <a href="#"
+                               class="nav-link text-white rounded-3 small">
+                                Pending Approvals
+                            </a>
+
+                            <a href="#"
+                               class="nav-link text-white rounded-3 small">
+                                Verified Companies
+                            </a>
+
+                        </div>
+
+                        <!-- JOB MANAGEMENT -->
+                        <span class="text-uppercase text-white-50
+                                     small fw-bold px-2 mt-4 mb-2">
+                            Job Management
+                        </span>
+
+                        <a class="nav-link text-white rounded-3"
+                           data-bs-toggle="collapse"
+                           href="#jobsMenu"
+                           role="button"
+                           aria-expanded="false"
+                           aria-controls="jobsMenu">
+
+                            <span class="me-2">▣</span>
+                            Jobs
+                            <span class="ms-auto float-end">⌄</span>
+                        </a>
+
+                        <div class="collapse ps-3" id="jobsMenu">
+
+                            <a href="#"
+                               class="nav-link text-white rounded-3 small">
+                                All Jobs
+                            </a>
+
+                            <a href="#"
+                               class="nav-link text-white rounded-3 small">
+                                Pending Jobs
+                            </a>
+
+                            <a href="#"
+                               class="nav-link text-white rounded-3 small">
+                                Published Jobs
+                            </a>
+
+                            <a href="#"
+                               class="nav-link text-white rounded-3 small">
+                                Closed Jobs
+                            </a>
+
+                        </div>
+
+                        <!-- RECRUITMENT -->
+                        <span class="text-uppercase text-white-50
+                                     small fw-bold px-2 mt-4 mb-2">
+                            Recruitment
+                        </span>
+
+                        <a href="#"
+                           class="nav-link text-white rounded-3">
+                            <span class="me-2">☷</span>
+                            Applications
+                        </a>
+
+                        <a href="#"
+                           class="nav-link text-white rounded-3">
+                            <span class="me-2">◷</span>
+                            Interviews
+                        </a>
+
+                        <!-- INTERVIEW PREPARATION -->
+                        <span class="text-uppercase text-white-50
+                                     small fw-bold px-2 mt-4 mb-2">
+                            Interview Preparation
+                        </span>
+
+                        <a href="#"
+                           class="nav-link text-white rounded-3">
+                            <span class="me-2">▤</span>
+                            Question Bank
+                        </a>
+
+                        <a href="#"
+                           class="nav-link text-white rounded-3">
+                            <span class="me-2">▣</span>
+                            Learning Roadmaps
+                        </a>
+
+                        <a href="#"
+                           class="nav-link text-white rounded-3">
+                            <span class="me-2">▧</span>
+                            Study Materials
+                        </a>
+
+                        <!-- AI TOOLS -->
+                        <span class="text-uppercase text-white-50
+                                     small fw-bold px-2 mt-4 mb-2">
+                            AI Tools
+                        </span>
+
+                        <a href="#"
+                           class="nav-link text-white rounded-3">
+                            <span class="me-2">✧</span>
+                            Resume Analyzer
+                        </a>
+
+                        <a href="#"
+                           class="nav-link text-white rounded-3">
+                            <span class="me-2">✧</span>
+                            Job Matching
+                        </a>
+
+                        <a href="#"
+                           class="nav-link text-white rounded-3">
+                            <span class="me-2">✧</span>
+                            Interview Assistant
+                        </a>
+
+                        <!-- ANALYTICS -->
+                        <span class="text-uppercase text-white-50
+                                     small fw-bold px-2 mt-4 mb-2">
+                            Analytics
+                        </span>
+
+                        <a href="#"
+                           class="nav-link text-white rounded-3">
+                            <span class="me-2">▥</span>
+                            Reports
+                        </a>
+
+                        <!-- CONFIGURATION -->
+                        <span class="text-uppercase text-white-50
+                                     small fw-bold px-2 mt-4 mb-2">
+                            Configuration
+                        </span>
+
+                        <a href="#"
+                           class="nav-link text-white rounded-3">
+                            <span class="me-2">⚙</span>
+                            Settings
+                        </a>
+
+                    </nav>
+
+                </div>
+
+                <!-- LOGOUT REMOVED -->
+
+            </aside>
+
+            <!-- RIGHT CONTENT -->
+            <div class="col min-vh-100 d-flex flex-column bg-light"
+                 style="margin-left:260px;width:calc(100% - 260px);">
+
+                <!-- TOP HEADER -->
+                <header class="navbar bg-white border-bottom
+                               border-primary-subtle px-4 py-3 sticky-top">
+
+                    <div>
+                        <h5 class="mb-1 fw-bold text-dark">
+                            @ViewData["Title"]
+                        </h5>
+
+                        <small class="text-secondary">
+                            HireNova Administration Portal
+                        </small>
+                    </div>
+
+                    <span class="badge bg-primary px-3 py-2">
+                        Admin Panel
+                    </span>
+
+                </header>
+
+                <!-- PAGE CONTENT -->
+                <main class="container-fluid p-4 flex-grow-1">
+
+                    @RenderBody()
+
+                </main>
+
+                <!-- FOOTER -->
+                <footer class="bg-white border-top
+                               border-primary-subtle text-center
+                               text-secondary p-3 small">
+
+                    &copy; @DateTime.Now.Year HireNova.
+                    All rights reserved.
+
+                </footer>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- BOOTSTRAP JAVASCRIPT -->
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="~/js/site.js"
+            asp-append-version="true"></script>
+
+    @await RenderSectionAsync("Scripts", required: false)
+
+</body>
+</html>
+

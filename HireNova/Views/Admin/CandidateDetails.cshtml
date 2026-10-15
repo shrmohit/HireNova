@@ -1,0 +1,205 @@
+﻿
+@model HireNova.Data_Model.DTOs.CandidateDTO
+
+@{
+    ViewData["Title"] = "Candidate Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var educationList =
+        ViewBag.Education as List<HireNova.Data_Model.DTOs.CandidateEducationDTO>
+        ?? new List<HireNova.Data_Model.DTOs.CandidateEducationDTO>();
+}
+
+<div class="container-fluid py-3">
+
+    <!-- Page Header -->
+    <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
+        <div>
+            <h2 class="fw-bold mb-1">Candidate Details</h2>
+            <p class="text-muted mb-0">
+                View candidate account and education information.
+            </p>
+        </div>
+
+        <a asp-controller="Admin"
+           asp-action="Candidates"
+           class="btn btn-outline-secondary">
+            <i class="bi bi-arrow-left me-1"></i>
+            Back to Candidates
+        </a>
+    </div>
+
+    <!-- Candidate Account Details -->
+    <div class="card border-0 shadow-sm rounded-4 mb-4">
+
+        <div class="card-header bg-white border-0 p-4">
+            <div class="d-flex align-items-center gap-3">
+                <div class="rounded-circle bg-primary bg-opacity-10 text-primary
+                            d-flex align-items-center justify-content-center"
+                     style="width:60px;height:60px;font-size:24px;">
+                    <i class="bi bi-person"></i>
+                </div>
+
+                <div>
+                    <h4 class="fw-bold mb-1">@Model.FullName</h4>
+                    <span class="text-muted">Candidate ID: @Model.UserId</span>
+                </div>
+
+                <div class="ms-auto">
+                    @if (Model.Status)
+                    {
+                        <span class="badge bg-success px-3 py-2">Active</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-danger px-3 py-2">Inactive</span>
+                    }
+                </div>
+            </div>
+        </div>
+
+        <div class="card-body p-4 border-top">
+            <h5 class="fw-bold mb-4">Account Information</h5>
+
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <label class="text-muted small mb-1">Candidate ID</label>
+                    <div class="fw-semibold">@Model.UserId</div>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="text-muted small mb-1">Full Name</label>
+                    <div class="fw-semibold">@Model.FullName</div>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="text-muted small mb-1">Email Address</label>
+                    <div class="fw-semibold">@Model.Email</div>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="text-muted small mb-1">Account Status</label>
+                    <div>
+                        @if (Model.Status)
+                        {
+                            <span class="badge bg-success">Active</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-danger">Inactive</span>
+                        }
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="text-muted small mb-1">Registered On</label>
+                    <div class="fw-semibold">
+                        @Model.CreatedDate.ToString("dd MMM yyyy, hh:mm tt")
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <label class="text-muted small mb-1">Last Updated</label>
+                    <div class="fw-semibold">
+                        @(Model.UpdatedDate.HasValue
+                            ? Model.UpdatedDate.Value.ToString("dd MMM yyyy, hh:mm tt")
+                            : "Never updated")
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Education Details -->
+    <div class="card border-0 shadow-sm rounded-4">
+
+        <div class="card-header bg-white border-0 p-4">
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-2">
+                <div>
+                    <h5 class="fw-bold mb-1">
+                        <i class="bi bi-mortarboard text-primary me-2"></i>
+                        Education Details
+                    </h5>
+                    <p class="text-muted small mb-0">
+                        Candidate academic qualifications
+                    </p>
+                </div>
+
+                <span class="badge bg-primary bg-opacity-10 text-primary px-3 py-2">
+                    Total Records: @educationList.Count
+                </span>
+            </div>
+        </div>
+
+        <div class="card-body p-4 border-top">
+
+            @if (educationList.Any())
+            {
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle mb-0">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Qualification</th>
+                                <th>Institution</th>
+                                <th>Specialization</th>
+                                <th>Passing Year</th>
+                                <th>Percentage</th>
+                                <th>CGPA</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            @foreach (var item in educationList)
+                            {
+                                <tr>
+                                    <td class="fw-semibold">
+                                        @item.Qualification
+                                    </td>
+
+                                    <td>@item.InstitutionName</td>
+
+                                    <td>
+                                        @(string.IsNullOrWhiteSpace(item.Specialization)
+                                            ? "-"
+                                            : item.Specialization)
+                                    </td>
+
+                                    <td>
+                                        @(item.PassingYear?.ToString() ?? "-")
+                                    </td>
+
+                                    <td>
+                                        @(item.Percentage.HasValue
+                                            ? item.Percentage.Value.ToString("0.##") + "%"
+                                            : "-")
+                                    </td>
+
+                                    <td>
+                                        @(item.CGPA.HasValue
+                                            ? item.CGPA.Value.ToString("0.##")
+                                            : "-")
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            }
+            else
+            {
+                <div class="text-center py-5">
+                    <i class="bi bi-mortarboard text-muted"
+                       style="font-size:42px;"></i>
+
+                    <h6 class="fw-bold mt-3">No Education Details Found</h6>
+
+                    <p class="text-muted mb-0">
+                        Education records will appear here once they are added.
+                    </p>
+                </div>
+            }
+
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,241 @@
+﻿
+@model List<HireNova.Data_Model.DTOs.CandidateDTO>
+
+@{
+    ViewData["Title"] = "Candidates Management";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    var candidates = Model ?? new List<HireNova.Data_Model.DTOs.CandidateDTO>();
+    var selectedStatus = ViewBag.StatusFilter == null
+        ? -1
+        : (int)ViewBag.StatusFilter;
+}
+
+<div class="container-fluid py-3">
+
+    <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
+        <div>
+            <h2 class="fw-bold mb-1">Candidates Management</h2>
+            <p class="text-muted mb-0">
+                View and manage registered candidates.
+            </p>
+        </div>
+
+        <a asp-controller="Admin"
+           asp-action="Index"
+           class="btn btn-outline-primary">
+            Back to Dashboard
+        </a>
+    </div>
+
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["SuccessMessage"]
+            <button type="button" class="btn-close"
+                    data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            @TempData["ErrorMessage"]
+            <button type="button" class="btn-close"
+                    data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <!-- Candidate Summary -->
+    <div class="row g-3 mb-4">
+        <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100">
+                <div class="card-body">
+                    <p class="text-muted mb-1">Total Candidates</p>
+                    <h3 class="fw-bold">@candidates.Count</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100">
+                <div class="card-body">
+                    <p class="text-muted mb-1">Active Candidates</p>
+                    <h3 class="fw-bold text-success">
+                        @candidates.Count(c => c.Status)
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card border-0 shadow-sm h-100">
+                <div class="card-body">
+                    <p class="text-muted mb-1">Inactive Candidates</p>
+                    <h3 class="fw-bold text-danger">
+                        @candidates.Count(c => !c.Status)
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Candidates Table -->
+    <div class="card border-0 shadow-sm">
+
+        <div class="card-header bg-white p-3">
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+                <h5 class="fw-bold mb-0">Candidates List</h5>
+
+                <!-- Search and Status Filter -->
+                <form asp-controller="Admin"
+                      asp-action="Candidates"
+                      method="get"
+                      class="d-flex gap-2 flex-wrap">
+
+                    <input type="search"
+                           name="search"
+                           value="@ViewBag.Search"
+                           class="form-control"
+                           placeholder="Search name or email..." />
+
+                    <select name="statusFilter" class="form-select">
+                        <option value="-1"
+                                selected="@(selectedStatus == -1)">
+                            All Statuses
+                        </option>
+
+                        <option value="1"
+                                selected="@(selectedStatus == 1)">
+                            Active
+                        </option>
+
+                        <option value="0"
+                                selected="@(selectedStatus == 0)">
+                            Inactive
+                        </option>
+                    </select>
+
+                    <button type="submit" class="btn btn-primary">
+                        Search
+                    </button>
+
+                    <a asp-controller="Admin"
+                       asp-action="Candidates"
+                       class="btn btn-outline-secondary">
+                        Reset
+                    </a>
+                </form>
+            </div>
+        </div>
+
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover align-middle">
+
+                    <thead class="table-light">
+                        <tr>
+                            <th>ID</th>
+                            <th>Full Name</th>
+                            <th>Email</th>
+                            <th>Status</th>
+                            <th>Created Date</th>
+                            <th style="min-width: 210px;">Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @if (candidates.Any())
+                        {
+                            foreach (var candidate in candidates)
+                            {
+                                <tr>
+                                    <td>@candidate.UserId</td>
+                                    <td>@candidate.FullName</td>
+                                    <td>@candidate.Email</td>
+
+                                    <td>
+                                        @if (candidate.Status)
+                                        {
+                                            <span class="badge bg-success">
+                                                Active
+                                            </span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge bg-danger">
+                                                Inactive
+                                            </span>
+                                        }
+                                    </td>
+
+                                    <td>
+                                        @candidate.CreatedDate.ToString("dd MMM yyyy")
+                                    </td>
+
+                                    <td>
+                                        <div class="d-flex gap-2 flex-wrap">
+
+                                            <!-- View Details -->
+                                            <a asp-controller="Admin"
+                                               asp-action="CandidateDetails"
+                                               asp-route-id="@candidate.UserId"
+                                               class="btn btn-sm btn-outline-primary">
+                                                View Details
+                                            </a>
+
+                                            <!-- Activate / Deactivate -->
+                                            <form asp-controller="Admin"
+                                                  asp-action="UpdateCandidateStatus"
+                                                  method="post"
+                                                  class="d-inline"
+                                                  onsubmit="return confirm('Are you sure you want to change this candidate status?');">
+
+                                                @Html.AntiForgeryToken()
+
+                                                <input type="hidden"
+                                                       name="userId"
+                                                       value="@candidate.UserId" />
+
+                                                <input type="hidden"
+                                                       name="status"
+                                                       value="@(!candidate.Status ? "true" : "false")" />
+
+                                                @if (candidate.Status)
+                                                {
+                                                    <button type="submit"
+                                                            class="btn btn-sm btn-outline-danger">
+                                                        Deactivate
+                                                    </button>
+                                                }
+                                                else
+                                                {
+                                                    <button type="submit"
+                                                            class="btn btn-sm btn-outline-success">
+                                                        Activate
+                                                    </button>
+                                                }
+                                            </form>
+
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        }
+                        else
+                        {
+                            <tr>
+                                <td colspan="6"
+                                    class="text-center text-muted py-4">
+                                    No candidates found.
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>

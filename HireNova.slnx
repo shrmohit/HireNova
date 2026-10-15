@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="HireNova.Data_Connection/HireNova.Data_Connection.csproj" />
+  <Project Path="HireNova.Data_Model/HireNova.Data_Model.csproj" />
+  <Project Path="HireNova.Data_Services/HireNova.Data_Services.csproj" />
+  <Project Path="HireNova/HireNova.csproj" />
+</Solution>
