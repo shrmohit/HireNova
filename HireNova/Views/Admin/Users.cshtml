@@ -1,0 +1,298 @@
+﻿
+@model List<HireNova.Data_Model.DTOs.AdminUserDTO>
+
+@{
+    ViewData["Title"] = "Manage Users";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- PAGE HEADER -->
+<div class="d-flex flex-wrap justify-content-between
+            align-items-center gap-3 mb-4">
+
+    <div>
+        <h3 class="fw-bold text-dark mb-1">
+            Manage Users
+        </h3>
+
+        <p class="text-secondary mb-0">
+            View and search registered users.
+        </p>
+    </div>
+
+    <a asp-controller="Admin"
+       asp-action="Index"
+       class="btn btn-outline-primary">
+        <span class="me-1">←</span>
+        Dashboard
+    </a>
+
+</div>
+
+<!-- USER STATISTICS -->
+<div class="row g-3 mb-4">
+
+    <div class="col-sm-6 col-xl-4">
+        <div class="card border-0 shadow-sm h-100">
+            <div class="card-body d-flex align-items-center gap-3">
+
+                <div class="rounded-3 d-flex align-items-center
+                            justify-content-center bg-primary bg-opacity-10
+                            text-primary"
+                     style="width:50px;height:50px;">
+                    <span class="fs-3">♙</span>
+                </div>
+
+                <div>
+                    <div class="text-secondary small">
+                        Total Users
+                    </div>
+
+                    <h4 class="fw-bold mb-0">
+                        @(Model?.Count ?? 0)
+                    </h4>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-xl-4">
+        <div class="card border-0 shadow-sm h-100">
+            <div class="card-body d-flex align-items-center gap-3">
+
+                <div class="rounded-3 d-flex align-items-center
+                            justify-content-center bg-success bg-opacity-10
+                            text-success"
+                     style="width:50px;height:50px;">
+                    <span class="fs-3">✓</span>
+                </div>
+
+                <div>
+                    <div class="text-secondary small">
+                        Active Users
+                    </div>
+
+                    <h4 class="fw-bold mb-0">
+                        @(Model?.Count(u => u.Status) ?? 0)
+                    </h4>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="col-sm-6 col-xl-4">
+        <div class="card border-0 shadow-sm h-100">
+            <div class="card-body d-flex align-items-center gap-3">
+
+                <div class="rounded-3 d-flex align-items-center
+                            justify-content-center bg-danger bg-opacity-10
+                            text-danger"
+                     style="width:50px;height:50px;">
+                    <span class="fs-3">!</span>
+                </div>
+
+                <div>
+                    <div class="text-secondary small">
+                        Inactive Users
+                    </div>
+
+                    <h4 class="fw-bold mb-0">
+                        @(Model?.Count(u => !u.Status) ?? 0)
+                    </h4>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- USERS TABLE CARD -->
+<div class="card border-0 shadow-sm">
+
+    <!-- CARD HEADER -->
+    <div class="card-header bg-white border-0 p-4">
+
+        <div class="d-flex flex-wrap justify-content-between
+                    align-items-center gap-2">
+
+            <div>
+                <h5 class="fw-bold mb-1">
+                    Registered Users
+                </h5>
+
+                <small class="text-secondary">
+                    Search and view user details
+                </small>
+            </div>
+
+            <span class="badge bg-primary rounded-pill px-3 py-2">
+                @(Model?.Count ?? 0) Users
+            </span>
+
+        </div>
+
+    </div>
+
+    <div class="card-body p-4">
+
+        <!-- SEARCH FORM -->
+        <form asp-controller="Admin"
+              asp-action="Users"
+              method="get"
+              class="row g-2 mb-4">
+
+            <div class="col-12 col-md-8 col-lg-9">
+
+                <input type="text"
+                       name="search"
+                       value="@ViewBag.Search"
+                       class="form-control"
+                       placeholder="Search by name or email..." />
+
+            </div>
+
+            <div class="col-12 col-md-4 col-lg-3">
+
+                <div class="d-flex gap-2">
+
+                    <button type="submit"
+                            class="btn btn-primary flex-grow-1">
+                        Search
+                    </button>
+
+                    <a asp-controller="Admin"
+                       asp-action="Users"
+                       class="btn btn-outline-secondary">
+                        Reset
+                    </a>
+
+                </div>
+
+            </div>
+
+        </form>
+
+        <!-- USERS TABLE -->
+        <div class="table-responsive">
+
+            <table class="table table-hover align-middle mb-0">
+
+                <thead>
+                    <tr class="table-primary">
+                        <th class="py-3">ID</th>
+                        <th class="py-3">Full Name</th>
+                        <th class="py-3">Email</th>
+                        <th class="py-3">User Type</th>
+                        <th class="py-3">Status</th>
+                        <th class="py-3">Created Date</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+
+                    @if (Model != null && Model.Count > 0)
+                    {
+                        foreach (var user in Model)
+                        {
+                            <tr>
+
+                                <td class="text-secondary">
+                                    @user.UserId
+                                </td>
+
+                                <td>
+                                    <div class="fw-semibold text-dark">
+                                        @user.FullName
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <span class="text-secondary">
+                                        @user.Email
+                                    </span>
+                                </td>
+
+                                <td>
+                                    <span class="badge bg-light text-dark border">
+                                        @user.UserType
+                                    </span>
+                                </td>
+
+                                <td>
+                                    @if (user.Status)
+                                    {
+                                        <span class="badge bg-success-subtle
+                                                     text-success border
+                                                     border-success-subtle">
+                                            Active
+                                        </span>
+                                    }
+                                    else
+                                    {
+                                        <span class="badge bg-danger-subtle
+                                                     text-danger border
+                                                     border-danger-subtle">
+                                            Inactive
+                                        </span>
+                                    }
+                                </td>
+
+                                <td class="text-secondary text-nowrap">
+                                    @user.CreatedDate.ToString("dd MMM yyyy")
+                                </td>
+
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr>
+                            <td colspan="6"
+                                class="text-center py-5">
+
+                                <div class="mb-3 text-secondary">
+                                    <span class="fs-1">♙</span>
+                                </div>
+
+                                <h6 class="fw-bold">
+                                    No Users Found
+                                </h6>
+
+                                <p class="text-secondary mb-0">
+                                    No registered users match your search.
+                                </p>
+
+                            </td>
+                        </tr>
+                    }
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+        <!-- TABLE FOOTER -->
+        <div class="d-flex flex-wrap justify-content-between
+                    align-items-center gap-2 mt-4 pt-3 border-top">
+
+            <small class="text-secondary">
+                Total users:
+                <strong class="text-dark">
+                    @(Model?.Count ?? 0)
+                </strong>
+            </small>
+
+            <small class="text-secondary">
+                HireNova Admin Portal
+            </small>
+
+        </div>
+
+    </div>
+
+</div>
+

@@ -1,0 +1,651 @@
+﻿
+@model HireNova.Data_Model.DTOs.AdminDashboardDTO
+
+@{
+    ViewData["Title"] = "Admin Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container-fluid py-3">
+
+    <!-- Welcome Header -->
+    <div class="card border-0 rounded-4 text-white mb-4 shadow"
+         style="background: linear-gradient(135deg, #0d5cff, #003db3);">
+
+        <div class="card-body p-4 p-lg-5">
+            <div class="row align-items-center g-4">
+
+                <div class="col-12 col-lg-8">
+
+                    <span class="badge bg-white text-primary mb-3">
+                        ADMIN CONTROL PANEL
+                    </span>
+
+                    <h2 class="fw-bold mb-3">
+                        Welcome to HireNova!
+                    </h2>
+
+                    <p class="mb-0 text-white">
+                        Manage candidates, recruiters, companies, jobs,
+                        applications and interview preparation from one place.
+                    </p>
+
+                </div>
+
+                <div class="col-12 col-lg-4">
+                    <div class="d-flex flex-wrap justify-content-lg-end gap-2">
+
+                        <a asp-controller="Admin"
+                           asp-action="Users"
+                           class="btn btn-light text-primary fw-semibold">
+                            Manage Users
+                        </a>
+
+                        <a asp-controller="Admin"
+                           asp-action="Logout"
+                           class="btn btn-outline-light">
+                            Logout
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Platform Overview -->
+    <div class="d-flex flex-wrap justify-content-between
+                align-items-center gap-2 mb-3">
+
+        <div>
+            <h5 class="fw-bold text-dark mb-1">
+                Platform Overview
+            </h5>
+
+            <p class="text-secondary small mb-0">
+                Quick summary of the HireNova platform.
+            </p>
+        </div>
+
+        <span class="badge rounded-pill bg-primary px-3 py-2">
+            Admin Dashboard
+        </span>
+
+    </div>
+
+
+    <!-- Statistics Cards -->
+    <div class="row g-3 mb-4">
+
+        <!-- Total Admins -->
+        <div class="col-12 col-sm-6 col-xl-4">
+            <div class="card h-100 border rounded-4 shadow-sm">
+                <div class="card-body p-4">
+
+                    <div class="d-flex justify-content-between
+                                align-items-center">
+
+                        <div>
+                            <p class="text-secondary small mb-2">
+                                Total Admins
+                            </p>
+
+                            <h2 class="fw-bold text-primary mb-0">
+                                @(Model?.TotalAdmins ?? 0)
+                            </h2>
+                        </div>
+
+                        <div class="rounded-3 bg-primary-subtle
+                                    text-primary p-3">
+                            <span class="fs-3">👥</span>
+                        </div>
+
+                    </div>
+
+                    <a asp-controller="Admin"
+                       asp-action="Users"
+                       class="btn btn-sm btn-outline-primary mt-3">
+                        Manage Users
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Candidates -->
+        <div class="col-12 col-sm-6 col-xl-4">
+            <div class="card h-100 border rounded-4 shadow-sm">
+                <div class="card-body p-4">
+
+                    <div class="d-flex justify-content-between
+                                align-items-center">
+
+                        <div>
+                            <p class="text-secondary small mb-2">
+                                Total Candidates
+                            </p>
+
+                            <h2 class="fw-bold text-dark mb-0">—</h2>
+                        </div>
+
+                        <div class="rounded-3 bg-success-subtle
+                                    text-success p-3">
+                            <span class="fs-3">🧑‍💼</span>
+                        </div>
+
+                    </div>
+
+                    <p class="text-secondary small mt-3 mb-0">
+                        Registered job seekers and their profiles.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Recruiters -->
+        <div class="col-12 col-sm-6 col-xl-4">
+            <div class="card h-100 border rounded-4 shadow-sm">
+                <div class="card-body p-4">
+
+                    <div class="d-flex justify-content-between
+                                align-items-center">
+
+                        <div>
+                            <p class="text-secondary small mb-2">
+                                Total Recruiters
+                            </p>
+
+                            <h2 class="fw-bold text-dark mb-0">—</h2>
+                        </div>
+
+                        <div class="rounded-3 bg-info-subtle
+                                    text-info p-3">
+                            <span class="fs-3">🤝</span>
+                        </div>
+
+                    </div>
+
+                    <p class="text-secondary small mt-3 mb-0">
+                        Recruiters managing hiring activities.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Companies -->
+        <div class="col-12 col-sm-6 col-xl-4">
+            <div class="card h-100 border rounded-4 shadow-sm">
+                <div class="card-body p-4">
+
+                    <div class="d-flex justify-content-between
+                                align-items-center">
+
+                        <div>
+                            <p class="text-secondary small mb-2">
+                                Total Companies
+                            </p>
+
+                            <h2 class="fw-bold text-dark mb-0">—</h2>
+                        </div>
+
+                        <div class="rounded-3 bg-warning-subtle
+                                    text-warning p-3">
+                            <span class="fs-3">🏢</span>
+                        </div>
+
+                    </div>
+
+                    <p class="text-secondary small mt-3 mb-0">
+                        Company profiles and verification.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Jobs -->
+        <div class="col-12 col-sm-6 col-xl-4">
+            <div class="card h-100 border rounded-4 shadow-sm">
+                <div class="card-body p-4">
+
+                    <div class="d-flex justify-content-between
+                                align-items-center">
+
+                        <div>
+                            <p class="text-secondary small mb-2">
+                                Total Jobs
+                            </p>
+
+                            <h2 class="fw-bold text-dark mb-0">—</h2>
+                        </div>
+
+                        <div class="rounded-3 bg-primary-subtle
+                                    text-primary p-3">
+                            <span class="fs-3">💼</span>
+                        </div>
+
+                    </div>
+
+                    <p class="text-secondary small mt-3 mb-0">
+                        Published, pending and closed job listings.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Applications -->
+        <div class="col-12 col-sm-6 col-xl-4">
+            <div class="card h-100 border rounded-4 shadow-sm">
+                <div class="card-body p-4">
+
+                    <div class="d-flex justify-content-between
+                                align-items-center">
+
+                        <div>
+                            <p class="text-secondary small mb-2">
+                                Total Applications
+                            </p>
+
+                            <h2 class="fw-bold text-dark mb-0">—</h2>
+                        </div>
+
+                        <div class="rounded-3 bg-danger-subtle
+                                    text-danger p-3">
+                            <span class="fs-3">📄</span>
+                        </div>
+
+                    </div>
+
+                    <p class="text-secondary small mt-3 mb-0">
+                        Candidate applications and their progress.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Management Modules -->
+    <div class="mb-3">
+        <h5 class="fw-bold text-dark mb-1">
+            Management Modules
+        </h5>
+
+        <p class="text-secondary small mb-0">
+            Open a module to manage the platform.
+        </p>
+    </div>
+
+
+    <div class="row g-3 mb-4">
+
+        <!-- User Management -->
+        <div class="col-12 col-sm-6 col-xl-4">
+            <a asp-controller="Admin"
+               asp-action="Users"
+               class="card h-100 text-decoration-none text-dark
+                      border rounded-4 shadow-sm">
+
+                <div class="card-body p-4">
+
+                    <div class="d-inline-flex align-items-center
+                                justify-content-center bg-primary-subtle
+                                text-primary rounded-3 p-3 mb-3">
+                        <span class="fs-3">👥</span>
+                    </div>
+
+                    <h6 class="fw-bold text-primary">
+                        User Management
+                    </h6>
+
+                    <p class="text-secondary small mb-0">
+                        View registered users and manage available user records.
+                    </p>
+
+                </div>
+            </a>
+        </div>
+
+
+        <!-- Company Management -->
+        <div class="col-12 col-sm-6 col-xl-4">
+            <div class="card h-100 border rounded-4 shadow-sm">
+                <div class="card-body p-4">
+
+                    <div class="d-inline-flex align-items-center
+                                justify-content-center bg-warning-subtle
+                                text-warning rounded-3 p-3 mb-3">
+                        <span class="fs-3">🏢</span>
+                    </div>
+
+                    <h6 class="fw-bold text-primary">
+                        Company Management
+                    </h6>
+
+                    <p class="text-secondary small mb-0">
+                        Manage company profiles, verification and approval status.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Job Management -->
+        <div class="col-12 col-sm-6 col-xl-4">
+            <div class="card h-100 border rounded-4 shadow-sm">
+                <div class="card-body p-4">
+
+                    <div class="d-inline-flex align-items-center
+                                justify-content-center bg-info-subtle
+                                text-info rounded-3 p-3 mb-3">
+                        <span class="fs-3">💼</span>
+                    </div>
+
+                    <h6 class="fw-bold text-primary">
+                        Job Management
+                    </h6>
+
+                    <p class="text-secondary small mb-0">
+                        Review job posts, pending listings and published vacancies.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Applications -->
+        <div class="col-12 col-sm-6 col-xl-4">
+            <div class="card h-100 border rounded-4 shadow-sm">
+                <div class="card-body p-4">
+
+                    <div class="d-inline-flex align-items-center
+                                justify-content-center bg-success-subtle
+                                text-success rounded-3 p-3 mb-3">
+                        <span class="fs-3">📋</span>
+                    </div>
+
+                    <h6 class="fw-bold text-primary">
+                        Application Tracking
+                    </h6>
+
+                    <p class="text-secondary small mb-0">
+                        Track applications, shortlisted candidates and rejections.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Interview Management -->
+        <div class="col-12 col-sm-6 col-xl-4">
+            <div class="card h-100 border rounded-4 shadow-sm">
+                <div class="card-body p-4">
+
+                    <div class="d-inline-flex align-items-center
+                                justify-content-center bg-danger-subtle
+                                text-danger rounded-3 p-3 mb-3">
+                        <span class="fs-3">📅</span>
+                    </div>
+
+                    <h6 class="fw-bold text-primary">
+                        Interview Management
+                    </h6>
+
+                    <p class="text-secondary small mb-0">
+                        Manage interview schedules, rescheduling and cancellations.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Interview Preparation -->
+        <div class="col-12 col-sm-6 col-xl-4">
+            <div class="card h-100 border rounded-4 shadow-sm">
+                <div class="card-body p-4">
+
+                    <div class="d-inline-flex align-items-center
+                                justify-content-center bg-primary-subtle
+                                text-primary rounded-3 p-3 mb-3">
+                        <span class="fs-3">📚</span>
+                    </div>
+
+                    <h6 class="fw-bold text-primary">
+                        Interview Preparation
+                    </h6>
+
+                    <p class="text-secondary small mb-0">
+                        Organize interview questions, learning roadmaps and study material.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- AI Tools -->
+        <div class="col-12 col-sm-6 col-xl-4">
+            <div class="card h-100 border rounded-4 shadow-sm">
+                <div class="card-body p-4">
+
+                    <div class="d-inline-flex align-items-center
+                                justify-content-center bg-info-subtle
+                                text-info rounded-3 p-3 mb-3">
+                        <span class="fs-3">✨</span>
+                    </div>
+
+                    <h6 class="fw-bold text-primary">
+                        AI Tools
+                    </h6>
+
+                    <p class="text-secondary small mb-0">
+                        Plan resume analysis, job matching and interview assistance.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Reports -->
+        <div class="col-12 col-sm-6 col-xl-4">
+            <div class="card h-100 border rounded-4 shadow-sm">
+                <div class="card-body p-4">
+
+                    <div class="d-inline-flex align-items-center
+                                justify-content-center bg-success-subtle
+                                text-success rounded-3 p-3 mb-3">
+                        <span class="fs-3">📊</span>
+                    </div>
+
+                    <h6 class="fw-bold text-primary">
+                        Reports & Analytics
+                    </h6>
+
+                    <p class="text-secondary small mb-0">
+                        Review platform usage, hiring activity and reports.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Settings -->
+        <div class="col-12 col-sm-6 col-xl-4">
+            <div class="card h-100 border rounded-4 shadow-sm">
+                <div class="card-body p-4">
+
+                    <div class="d-inline-flex align-items-center
+                                justify-content-center bg-warning-subtle
+                                text-warning rounded-3 p-3 mb-3">
+                        <span class="fs-3">⚙️</span>
+                    </div>
+
+                    <h6 class="fw-bold text-primary">
+                        Settings & Notifications
+                    </h6>
+
+                    <p class="text-secondary small mb-0">
+                        Configure platform preferences and notifications.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Quick Actions and Recent Activity -->
+    <div class="row g-4">
+
+        <!-- Quick Actions -->
+        <div class="col-12 col-lg-6">
+            <div class="card h-100 border rounded-4 shadow-sm">
+
+                <div class="card-header bg-white p-3">
+                    <h6 class="fw-bold mb-1">
+                        Quick Actions
+                    </h6>
+
+                    <p class="text-secondary small mb-0">
+                        Commonly used administrator actions.
+                    </p>
+                </div>
+
+                <div class="card-body p-4">
+
+                    <a asp-controller="Admin"
+                       asp-action="Users"
+                       class="d-flex justify-content-between
+                              align-items-center text-decoration-none
+                              text-dark border-bottom py-3">
+
+                        <span>👥 &nbsp; View and manage users</span>
+                        <span class="text-primary">→</span>
+
+                    </a>
+
+                    <a asp-controller="Admin"
+                       asp-action="Index"
+                       class="d-flex justify-content-between
+                              align-items-center text-decoration-none
+                              text-dark border-bottom py-3">
+
+                        <span>📊 &nbsp; Return to dashboard</span>
+                        <span class="text-primary">→</span>
+
+                    </a>
+
+                    <a asp-controller="Admin"
+                       asp-action="Logout"
+                       class="d-flex justify-content-between
+                              align-items-center text-decoration-none
+                              text-dark py-3">
+
+                        <span>↪ &nbsp; Sign out of Admin Panel</span>
+                        <span class="text-primary">→</span>
+
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Recent Activity -->
+        <div class="col-12 col-lg-6">
+            <div class="card h-100 border rounded-4 shadow-sm">
+
+                <div class="card-header bg-white p-3">
+                    <h6 class="fw-bold mb-1">
+                        Recent Activity
+                    </h6>
+
+                    <p class="text-secondary small mb-0">
+                        Activity panel preview.
+                    </p>
+                </div>
+
+                <div class="card-body p-4">
+
+                    <div class="d-flex gap-3 border-bottom py-3">
+
+                        <span class="text-primary fs-5">●</span>
+
+                        <div>
+                            <h6 class="small fw-bold mb-1">
+                                Admin dashboard opened
+                            </h6>
+
+                            <p class="text-secondary small mb-0">
+                                Your dashboard is ready to use.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="d-flex gap-3 border-bottom py-3">
+
+                        <span class="text-primary fs-5">●</span>
+
+                        <div>
+                            <h6 class="small fw-bold mb-1">
+                                User Management
+                            </h6>
+
+                            <p class="text-secondary small mb-0">
+                                Open the user module to view available records.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="d-flex gap-3 py-3">
+
+                        <span class="text-primary fs-5">●</span>
+
+                        <div>
+                            <h6 class="small fw-bold mb-1">
+                                More modules coming soon
+                            </h6>
+
+                            <p class="text-secondary small mb-0">
+                                Connect companies, jobs, applications and interviews
+                                to show real activity here.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Footer Note -->
+    <div class="text-center text-secondary small py-4">
+        HireNova Admin Panel · Manage your recruitment platform in one place.
+    </div>
+
+</div>
+

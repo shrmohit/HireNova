@@ -1,0 +1,521 @@
+﻿
+@{
+    ViewData["Title"] = "Recruiter Dashboard";
+    Layout = "~/Views/Shared/_RecruiterLayout.cshtml";
+}
+
+<style>
+    :root {
+        --hn-primary: #052b68;
+        --hn-accent: #990000;
+        --hn-border: #e2e8f0;
+        --hn-muted: #64748b;
+    }
+
+    .welcome {
+        padding: 28px;
+        margin-bottom: 25px;
+        border-radius: 14px;
+        color: #fff;
+        background: linear-gradient(120deg, #052b68, #0b438f);
+        box-shadow: 0 5px 18px rgba(5, 43, 104, .12);
+    }
+
+    .welcome h2 {
+        font-size: 26px;
+        font-weight: 800;
+        margin-bottom: 10px;
+    }
+
+    .welcome p {
+        color: #e2eaf7;
+        font-size: 13px;
+        line-height: 1.7;
+    }
+
+    .welcome .btn {
+        background: var(--hn-accent);
+        color: #fff;
+        border: 1px solid var(--hn-accent);
+        padding: 11px 17px;
+        border-radius: 8px;
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .welcome .btn:hover {
+        background: #7d0000;
+        border-color: #7d0000;
+        color: #fff;
+    }
+
+    .section-title {
+        color: var(--hn-primary);
+        font-size: 17px;
+        font-weight: 800;
+    }
+
+    .muted {
+        color: var(--hn-muted);
+    }
+
+    .stat-card {
+        height: 100%;
+        padding: 20px;
+        background: #fff;
+        border: 1px solid var(--hn-border);
+        border-radius: 12px;
+        box-shadow: 0 3px 12px rgba(15, 23, 42, .035);
+        transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .stat-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(15, 23, 42, .08);
+    }
+
+    .stat-icon {
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 11px;
+        background: #fbeaea;
+        color: var(--hn-accent);
+        font-size: 22px;
+        margin-bottom: 16px;
+    }
+
+    .stat-number {
+        color: var(--hn-primary);
+        font-size: 29px;
+        font-weight: 800;
+        margin: 5px 0;
+    }
+
+    .module-card {
+        display: block;
+        height: 100%;
+        padding: 21px;
+        background: #fff;
+        border: 1px solid var(--hn-border);
+        border-radius: 12px;
+        color: inherit;
+        transition: .2s ease;
+    }
+
+    .module-card:hover {
+        transform: translateY(-3px);
+        border-color: var(--hn-accent);
+        box-shadow: 0 8px 20px rgba(15, 23, 42, .07);
+        background: #fffdfd;
+    }
+
+    .module-icon {
+        width: 43px;
+        height: 43px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        background: #fbeaea;
+        color: var(--hn-accent);
+        font-size: 21px;
+        margin-bottom: 15px;
+    }
+
+    .module-title {
+        color: var(--hn-primary);
+        font-weight: 800;
+    }
+
+    .panel {
+        height: 100%;
+        overflow: hidden;
+        background: #fff;
+        border: 1px solid var(--hn-border);
+        border-radius: 12px;
+        box-shadow: 0 3px 12px rgba(15, 23, 42, .035);
+    }
+
+    .panel-heading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        padding: 18px 20px;
+        border-bottom: 1px solid var(--hn-border);
+    }
+
+    .panel-heading a {
+        color: var(--hn-accent);
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .panel-heading a:hover {
+        text-decoration: underline;
+    }
+
+    .panel .table {
+        margin-bottom: 0;
+    }
+
+    .panel .table thead th {
+        padding: 13px 16px;
+        background: #eef3fa;
+        color: var(--hn-primary);
+        border-bottom: 1px solid var(--hn-border);
+        font-size: 11px;
+        font-weight: 800;
+        white-space: nowrap;
+    }
+
+    .panel .table tbody td {
+        padding: 16px;
+        font-size: 12px;
+        vertical-align: middle;
+    }
+
+    .quick-link {
+        display: block;
+        padding: 14px 0;
+        border-bottom: 1px solid var(--hn-border);
+        color: var(--hn-primary);
+        transition: .2s ease;
+    }
+
+    .quick-link:hover {
+        color: var(--hn-accent);
+        padding-left: 5px;
+    }
+
+    .quick-link:last-child {
+        border-bottom: 0;
+    }
+
+    .module-badge {
+        display: inline-block;
+        padding: 5px 9px;
+        border-radius: 20px;
+        background: #e7efff;
+        color: var(--hn-primary);
+        font-size: 10px;
+        font-weight: 700;
+    }
+
+    .empty-message {
+        padding: 28px 15px !important;
+        text-align: center;
+    }
+
+    @@media (max-width: 650px) {
+        .welcome {
+            padding: 20px;
+        }
+
+        .welcome h2 {
+            font-size: 22px;
+        }
+
+        .stat-card {
+            padding: 14px;
+        }
+
+        .stat-number {
+            font-size: 24px;
+        }
+
+        .stat-icon {
+            width: 37px;
+            height: 37px;
+            font-size: 18px;
+        }
+
+        .module-card {
+            padding: 16px;
+        }
+
+        .panel-heading {
+            padding: 15px;
+        }
+    }
+</style>
+
+<!-- Welcome Banner -->
+<section class="welcome">
+    <div class="row align-items-center g-3">
+        <div class="col-12 col-lg-8">
+            <span class="badge bg-white text-primary mb-3">
+                RECRUITER CONTROL PANEL
+            </span>
+
+            <h2>Welcome to HireNova!</h2>
+
+            <p class="mb-0">
+                Manage your company, job postings, applications
+                and interviews from one place.
+            </p>
+        </div>
+
+        <div class="col-12 col-lg-4 text-lg-end">
+            <a asp-controller="Recruiter"
+               asp-action="ManageJobs"
+               class="btn">
+                + Post a New Job
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Dashboard Statistics -->
+<section class="row g-3 mb-4">
+
+    <div class="col-6 col-xl-3">
+        <div class="stat-card">
+            <div class="stat-icon">▤</div>
+            <div class="muted small">Total Jobs</div>
+            <div class="stat-number">—</div>
+            <small class="muted">Database integration pending</small>
+        </div>
+    </div>
+
+    <div class="col-6 col-xl-3">
+        <div class="stat-card">
+            <div class="stat-icon">♙</div>
+            <div class="muted small">Applications</div>
+            <div class="stat-number">—</div>
+            <small class="muted">Applications received</small>
+        </div>
+    </div>
+
+    <div class="col-6 col-xl-3">
+        <div class="stat-card">
+            <div class="stat-icon">◷</div>
+            <div class="muted small">Interviews</div>
+            <div class="stat-number">—</div>
+            <small class="muted">Scheduled interviews</small>
+        </div>
+    </div>
+
+    <div class="col-6 col-xl-3">
+        <div class="stat-card">
+            <div class="stat-icon">✓</div>
+            <div class="muted small">Shortlisted</div>
+            <div class="stat-number">—</div>
+            <small class="muted">Shortlisted candidates</small>
+        </div>
+    </div>
+
+</section>
+
+<!-- Recruitment Management -->
+<section class="mb-4">
+    <div class="mb-3">
+        <h2 class="section-title mb-1">Recruitment Management</h2>
+        <p class="muted small mb-0">
+            Select a module to manage your hiring workflow.
+        </p>
+    </div>
+
+    <div class="row g-3">
+
+        <div class="col-12 col-sm-6 col-xl-4">
+            <a class="module-card"
+               asp-controller="Recruiter"
+               asp-action="CompanyProfile">
+                <div class="module-icon">▣</div>
+                <h3 class="module-title h6">Company Profile</h3>
+                <p class="muted small mb-0">
+                    Maintain your company information and website details.
+                </p>
+            </a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-xl-4">
+            <a class="module-card"
+               asp-controller="Recruiter"
+               asp-action="ManageJobs">
+                <div class="module-icon">▤</div>
+                <h3 class="module-title h6">Manage Jobs</h3>
+                <p class="muted small mb-0">
+                    Create, edit, publish and close job vacancies.
+                </p>
+            </a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-xl-4">
+            <a class="module-card"
+               asp-controller="Recruiter"
+               asp-action="Applications">
+                <div class="module-icon">♙</div>
+                <h3 class="module-title h6">Applications</h3>
+                <p class="muted small mb-0">
+                    Review candidates and update application progress.
+                </p>
+            </a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-xl-4">
+            <a class="module-card"
+               asp-controller="Recruiter"
+               asp-action="Interviews">
+                <div class="module-icon">◷</div>
+                <h3 class="module-title h6">Interview Management</h3>
+                <p class="muted small mb-0">
+                    Schedule, reschedule and cancel interviews.
+                </p>
+            </a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-xl-4">
+            <a class="module-card"
+               asp-controller="Recruiter"
+               asp-action="Notifications">
+                <div class="module-icon">♧</div>
+                <h3 class="module-title h6">Notifications</h3>
+                <p class="muted small mb-0">
+                    View updates about applications and interviews.
+                </p>
+                <span class="module-badge mt-3">Configure next</span>
+            </a>
+        </div>
+
+        <div class="col-12 col-sm-6 col-xl-4">
+            <a class="module-card"
+               asp-controller="Recruiter"
+               asp-action="HiringReports">
+                <div class="module-icon">▥</div>
+                <h3 class="module-title h6">Hiring Reports</h3>
+                <p class="muted small mb-0">
+                    Review hiring activity and recruitment progress.
+                </p>
+                <span class="module-badge mt-3">Configure next</span>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- Recent Jobs and Quick Actions -->
+<section class="row g-4 mb-4">
+
+    <div class="col-12 col-xl-8">
+        <div class="panel">
+            <div class="panel-heading">
+                <h2 class="section-title mb-0">Recent Job Postings</h2>
+
+                <a asp-controller="Recruiter"
+                   asp-action="ManageJobs"
+                   class="fw-semibold">
+                    View all →
+                </a>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-hover align-middle">
+                    <thead>
+                        <tr>
+                            <th>Job Title</th>
+                            <th>Applications</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td colspan="3" class="empty-message">
+                                <div class="fw-semibold">
+                                    No job data connected yet
+                                </div>
+                                <small class="muted">
+                                    Job postings will appear here after
+                                    database integration.
+                                </small>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-12 col-xl-4">
+        <div class="panel p-3 p-md-4">
+            <h2 class="section-title mb-3">Quick Actions</h2>
+
+            <a class="quick-link"
+               asp-controller="Recruiter"
+               asp-action="ManageJobs">
+                <strong>＋ Post a Job</strong>
+                <div class="muted small mt-1">Create a new job opening</div>
+            </a>
+
+            <a class="quick-link"
+               asp-controller="Recruiter"
+               asp-action="Applications">
+                <strong>♙ Review Applications</strong>
+                <div class="muted small mt-1">View candidate applications</div>
+            </a>
+
+            <a class="quick-link"
+               asp-controller="Recruiter"
+               asp-action="Interviews">
+                <strong>◷ Schedule Interview</strong>
+                <div class="muted small mt-1">Manage candidate interviews</div>
+            </a>
+
+            <a class="quick-link"
+               asp-controller="Recruiter"
+               asp-action="CompanyProfile">
+                <strong>▣ Update Company</strong>
+                <div class="muted small mt-1">Maintain your company details</div>
+            </a>
+        </div>
+    </div>
+
+</section>
+
+<!-- Recent Applications -->
+<section class="mb-4">
+    <div class="panel">
+        <div class="panel-heading">
+            <h2 class="section-title mb-0">Recent Applications</h2>
+
+            <a asp-controller="Recruiter"
+               asp-action="Applications"
+               class="fw-semibold">
+                View all →
+            </a>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-hover align-middle">
+                <thead>
+                    <tr>
+                        <th>Candidate</th>
+                        <th>Applied For</th>
+                        <th>Applied Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td colspan="4" class="empty-message">
+                            <div class="fw-semibold">
+                                No application data connected yet
+                            </div>
+                            <small class="muted">
+                                Candidate applications will appear here
+                                once the application module is connected.
+                            </small>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+

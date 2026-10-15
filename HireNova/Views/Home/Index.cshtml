@@ -1,0 +1,348 @@
+﻿@{
+    ViewData["Title"] = "HireNova - Find Your Dream Job";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"]</title>
+
+    <!-- Bootstrap 5.3 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet" />
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+          rel="stylesheet" />
+</head>
+
+<body class="bg-body-tertiary">
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
+        <div class="container-xl">
+
+            <a class="navbar-brand d-flex align-items-center gap-2 fw-bold text-primary"
+               asp-controller="Home"
+               asp-action="Index">
+                <span class="bg-primary text-white rounded-3 px-2 py-1 fs-4">H</span>
+                <span class="fs-4 text-dark">HireNova</span>
+            </a>
+
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 gap-lg-3">
+                    <li class="nav-item">
+                        <a class="nav-link active"
+                           asp-controller="Home"
+                           asp-action="Index">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           asp-controller="Jobs"
+                           asp-action="Index">Jobs</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           asp-controller="Companies"
+                           asp-action="Index">Companies</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link"
+                           asp-controller="Home"
+                           asp-action="About">About</a>
+                    </li>
+                </ul>
+
+                <!-- DESKTOP SEARCH -->
+                <form asp-controller="Jobs"
+                      asp-action="Index"
+                      method="get"
+                      class="d-flex me-lg-3 mb-3 mb-lg-0"
+                      role="search">
+
+                    <div class="input-group">
+                        <input type="search"
+                               name="search"
+                               class="form-control"
+                               placeholder="Search jobs, companies..."
+                               aria-label="Search jobs and companies" />
+
+                        <button class="btn btn-outline-secondary"
+                                type="submit"
+                                aria-label="Search">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </div>
+                </form>
+
+                <div class="d-flex align-items-center gap-3">
+
+                    <a asp-controller="Admin"
+                       asp-action="Login"
+                       class="btn btn-link text-dark text-decoration-none">
+                        Login
+                    </a>
+
+                    <!-- REGISTER DROPDOWN -->
+                    <div class="dropdown">
+                        <button class="btn btn-primary dropdown-toggle px-4"
+                                type="button"
+                                data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                            Register
+                        </button>
+
+                        <ul class="dropdown-menu dropdown-menu-end shadow border-0 rounded-3 p-2"
+                            style="min-width: 260px;">
+
+                            <li>
+                                <a class="dropdown-item rounded-2 py-3"
+                                   asp-controller="Admin"
+                                   asp-action="Register">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <i class="bi bi-person-fill fs-3 text-primary"></i>
+                                        <div>
+                                            <div class="fw-semibold">
+                                                Register as Job Seeker
+                                            </div>
+                                            <small class="text-secondary">
+                                                Find jobs and grow your career
+                                            </small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li><hr class="dropdown-divider" /></li>
+
+                            <li>
+                                <a class="dropdown-item rounded-2 py-3"
+                                   asp-controller="Admin"
+                                   asp-action="Register">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <i class="bi bi-building-fill fs-3 text-primary"></i>
+                                        <div>
+                                            <div class="fw-semibold">
+                                                Register as Recruiter
+                                            </div>
+                                            <small class="text-secondary">
+                                                Post jobs and hire top talent
+                                            </small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <main class="container-xl py-4 py-lg-5">
+
+        <section class="bg-primary-subtle rounded-4 overflow-hidden shadow-sm">
+
+            <div class="row g-0 align-items-center">
+
+                <!-- HERO CONTENT -->
+                <div class="col-lg-7 p-4 p-md-5">
+
+                    <span class="badge text-bg-primary rounded-pill px-3 py-2 mb-3">
+                        <i class="bi bi-stars me-1"></i>
+                        Your Career Starts Here
+                    </span>
+
+                    <h1 class="display-5 fw-bold text-primary-emphasis mb-3">
+                        Find Your Dream Job
+                        <br />
+                        Build Your Future
+                    </h1>
+
+                    <p class="fs-6 text-secondary mb-4">
+                        Connecting talented people with leading companies.
+                        Your next opportunity is just a click away.
+                    </p>
+
+                    <!-- JOB SEARCH -->
+                    <form asp-controller="Jobs"
+                          asp-action="Index"
+                          method="get">
+
+                        <div class="card border-0 shadow-sm rounded-3">
+                            <div class="card-body p-2">
+                                <div class="row g-2 align-items-center">
+
+                                    <div class="col-md-5">
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-white border-0">
+                                                <i class="bi bi-search text-primary"></i>
+                                            </span>
+                                            <input type="text"
+                                                   name="search"
+                                                   class="form-control border-0 shadow-none"
+                                                   placeholder="Job title, skills or company" />
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-white border-0">
+                                                <i class="bi bi-geo-alt text-primary"></i>
+                                            </span>
+                                            <input type="text"
+                                                   name="location"
+                                                   class="form-control border-0 shadow-none"
+                                                   placeholder="Location" />
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <button type="submit"
+                                                class="btn btn-primary w-100 py-2">
+                                            Search Jobs
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- STATS -->
+                    <div class="row g-3 mt-4">
+
+                        <div class="col-4">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="bi bi-briefcase fs-2 text-primary"></i>
+                                <div>
+                                    <div class="fw-bold fs-5">50K+</div>
+                                    <small class="text-secondary">Active Jobs</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="bi bi-buildings fs-2 text-primary"></i>
+                                <div>
+                                    <div class="fw-bold fs-5">20K+</div>
+                                    <small class="text-secondary">Companies</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4">
+                            <div class="d-flex align-items-center gap-2">
+                                <i class="bi bi-people fs-2 text-primary"></i>
+                                <div>
+                                    <div class="fw-bold fs-5">1M+</div>
+                                    <small class="text-secondary">Job Seekers</small>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- HERO IMAGE -->
+                <div class="col-lg-5 d-flex align-items-end justify-content-center pt-3 px-3">
+
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=85"
+                         alt="Professional exploring career opportunities"
+                         class="img-fluid rounded-4 object-fit-cover"
+                         style="max-height: 430px; width: 100%;" />
+
+                </div>
+            </div>
+        </section>
+
+        <!-- TOP COMPANIES -->
+        <section class="card border-0 shadow-sm rounded-4 mt-4">
+            <div class="card-body p-4">
+
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div>
+                        <h2 class="h5 fw-bold mb-1">Top Companies</h2>
+                        <p class="text-secondary small mb-0">
+                            Explore opportunities at leading companies
+                        </p>
+                    </div>
+
+                    <a asp-controller="Companies"
+                       asp-action="Index"
+                       class="link-primary text-decoration-none small fw-semibold">
+                        View All <i class="bi bi-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="row row-cols-2 row-cols-md-5 g-3 text-center">
+
+                    <div class="col">
+                        <div class="border rounded-3 p-3 h-100">
+                            <i class="bi bi-google fs-2 text-danger"></i>
+                            <div class="fw-semibold mt-2">Google</div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="border rounded-3 p-3 h-100">
+                            <i class="bi bi-microsoft fs-2 text-primary"></i>
+                            <div class="fw-semibold mt-2">Microsoft</div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="border rounded-3 p-3 h-100">
+                            <i class="bi bi-amazon fs-2 text-dark"></i>
+                            <div class="fw-semibold mt-2">Amazon</div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="border rounded-3 p-3 h-100">
+                            <i class="bi bi-building fs-2 text-danger"></i>
+                            <div class="fw-semibold mt-2">TCS</div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="border rounded-3 p-3 h-100">
+                            <i class="bi bi-code-slash fs-2 text-primary"></i>
+                            <div class="fw-semibold mt-2">Infosys</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container-xl py-4">
+        <div class="border-top pt-3 text-center text-secondary small">
+            &copy; @DateTime.Now.Year HireNova. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
